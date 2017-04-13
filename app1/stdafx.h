@@ -5,18 +5,18 @@
 
 #pragma once
 
-
+#include "targetver.h"
 
 #include <stdio.h>
 #include <tchar.h>
-#include <iostream>
-#include <winsock2.h>
-#include <iphlpapi.h>
-#include <tlhelp32.h>
-#include <Ws2tcpip.h>
+#include <windows.h>
+#include <Winternl.h>
+#include <vector>
+#include <algorithm>
+#include <ntstatus.h>
+#include <iterator>
 
-#pragma comment(lib, "iphlpapi.lib")
-#pragma comment(lib, "wsock32.lib")
-#pragma comment(lib, "Ws2_32.lib")
+#pragma comment(lib, "Ntdll.lib")
+
 
 // TODO: プログラムに必要な追加ヘッダーをここで参照してください
